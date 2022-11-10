@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Game Center</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="styles.css">
+  	<script src="https://kit.fontawesome.com/54c8ea3451.js" crossorigin="anonymous"></script>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#header">
+<nav id="header" class="navbar navbar-expand-lg bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="assets/img/logo2.png" class="rounded" alt="logo Congreso" width="50px" height="50px">Game Center 2023</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">El evento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Ponentes principales</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Lugar y Fecha</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Calendario</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Inscribe a tu equipo</a>
+        </li>
+        <li class="nav-item">
+          <a class="btn btn-outline-light" aria-current="page" href="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalCompra"><strong>Comprar entradas</strong></a>
+        </li>
+        
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+<!---  ARRIBA EL HEADER  -->
+
+<main id="main">
+	<!--  SECCIÓN EL EVENTO  -->
+	<div id="carrusel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+  	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/ev1.jpg" class="d-block w-100" alt="el evento wao">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/ev2.jpg" class="d-block w-100" alt="el evento wao">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/ev3.jpg" class="d-block w-100" alt="el evento wao">
+    </div>
+    <div class="overlay">
+    	<div class="container">
+    		<div class="row align-items-center">
+    			<div class="col-md-6 offset-md-6 text-center text-end mt-4">
+    				<h2>Game Center 2023</h2>
+    				<br>
+    				<p>
+    					Del 10 al 15 de Enero del 2023, Cancún será sede del mayor evento de informática y videojuegos de latinoamérica. Game Center reunirá a la más grande y talentosa comunidad freaky de la que se tenga registro, en 6 días llenos de aprendizaje, diversión y entretenimiento.
+    				</p>
+    				<a href="#inscribe" class="btn btn-outline-light mt-2" role="button">Inscribe a tu equipo</a>
+    				<a class="btn btn-success mt-2" type="button" href="#modalCompra" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar entradas</a>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  	</div>
+	</div>
+	<!--  SECCIÓN PONENTES PRINCIPALES  -->
+	<section id="ponentes" class="mt-4 ">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center text-uppercase">
+					<h3>Conoce a nuestros ponentes principales</h3>
+				</div>
+			</div>
+			<div class="row align-items-center" py-4>
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Guillermo.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Guillermo del Toro</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-success">Cine</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjU-fnr34D7AhUQlmoFHVBVAicQFnoECAkQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FGuillermo_del_Toro&usg=AOvVaw2scRS2Z6wfqhvhpnRnZ5NH" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Bill.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Bill Gates</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-warning">Emprendimiento</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiGgfiZ4ID7AhVKmWoFHd7-D_wQFnoECBAQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FBill_Gates&usg=AOvVaw0j2EqTga16iebUDreKXjEK" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Lisa.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Su Lisa</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-danger">Hardware</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiJp--z4ID7AhUGomoFHZl-BLcQFnoECBUQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FSu_Lisa&usg=AOvVaw3KOfHJ9HPkA5p69_lYKnJx" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center" py-4>
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Blanca.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Blanca Treviño</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-warning">Emprendimiento</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj7i7yY44D7AhV5g4kEHY_iCwkQFnoECBgQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FBlanca_Trevi%25C3%25B1o&usg=AOvVaw1huwfzhuMlVDqwBBLpYie0" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Elon.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Elon Musk</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-warning">Emprendimiento</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj327it44D7AhWYmokEHYllCFsQFnoECA4QAw&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FElon_Musk%23%3A~%3Atext%3DEn%25202002%252C%2520Musk%2520fund%25C3%25B3%2520SpaceX%2C(ahora%2520Tesla%252C%2520Inc.)&usg=AOvVaw1lt6Xv2FIiMb2cwxFHUq8T" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Linus.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Linus Torvalds</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-dark">Sistemas Operativos</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwjAgfe444D7AhXyrokEHd4iClMQFnoECAkQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FLinus_Torvalds&usg=AOvVaw3yUlCCcJNJpHhyg1Ysgljh" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+			</div>
+
+			<div class="row align-items-center" py-4>
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/Phil.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Phil Spencer</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-primary">Videojuegos</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwi8oviQ5ID7AhXJk4kEHVx8BIUQFnoECBAQAQ&url=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FPhil_Spencer&usg=AOvVaw3Ziaaw165_RtMU05antnaM" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/masuda.png" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Junichi Masuda</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-primary">Videojuegos</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="#" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+
+				<div class="col-lg-4 col-md-6 col-12 pb-4 pt-3">
+					<div class="card align-items-center" style="width: 18rem;">
+  					<img src="assets/img/toby.jpg" class="card-img-top" alt="...">
+  					<div class="card-body">
+    				<h5 class="card-title">Toby Fox</h5>
+    				<div class="badges pb-3">
+    					<span class="badge bg-primary">Videojuegos</span>
+    					<span class="badge bg-info">Tecnología</span>
+    				</div>
+    				<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.lorem impsum blablabla</p>
+    				<a href="#" class="btn btn-primary">Conocer más...</a>
+  					</div>
+				</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+	<!--  SECCIÓN LUGAR Y FECHA  -->
+
+	<section id="lugarfecha">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12 col-md-6 ps-0 pe-0">
+					<img src="assets/img/hotel.jpg" alt="Cancún">
+				</div>
+				<div class="col-12 col-md-6 ps-3 pe-3 py-4" style="background-color: #E9E9FF">
+					<h3>Cancún, Quintana Roo, México</h3>
+					<p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut felis id eros molestie laoreet vel sed odio. Maecenas facilisis suscipit finibus. Donec varius odio enim, ac dignissim massa dapibus pharetra. Nam dictum neque id lorem porttitor, non luctus ipsum eleifend. In in nibh ipsum. Ut quis nisi laoreet ipsum vehicula commodo vitae ac mi. Quisque vulputate lacinia nulla, eu ultricies enim pellentesque a. Fusce posuere accumsan sollicitudin. Donec at magna at felis malesuada lobortis ac et nisi. Fusce ligula velit, placerat suscipit semper at, auctor ac turpis. Suspendisse tincidunt velit vel mauris interdum placerat sed nec purus. </p>
+					<a href="https://www.caribemexicano.travel/cancun" class="btn btn-success">Más sobre el lugar</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!--  SECCIÓN CALENDARIO  -->
+
+	<section id="calendario"> 
+		<div class="container">
+			<div class="row pt-4 pb-4">
+				<div class="col text-center text-uppercase">
+					<h3>Programa general de eventos:</h3>
+				</div>
+			</div>
+			<div class="table-responsive pt-4 pb-4">
+				<table class="table table-bordered table-hover">
+					<thead>
+						<tr class="table-dark">
+							<th>10 de Enero</th>
+							<th>11 de Enero</th>
+							<th>12 de Enero</th>
+							<th>13 de Enero</th>
+							<th>14 de Enero</th>
+							<th>15 de Enero</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Magna Inauguración <br> <a data-bs-toggle="offcanvas" href="#offcanvas">Detalles</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+						</tr>
+						<tr>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+						</tr>
+						<tr>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+						</tr>
+						<tr>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+						</tr>
+						<tr>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+							<td>Evento sin nombre <br> <a href="#">Link del evento</a></td>
+						</tr>	
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+
+	<!--  SECCIÓN INSCRIBE A TU EQUIPO  -->
+
+	<section id="inscribe" class="pt-4 pb-4">
+		<div class="container">
+			<div class="row">
+				<div class="col text-center">
+					<h3 class="text-uppercase">Inscribe a tu equipo<br>a los mejores retos internacionales.</h3>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col col-md-8 offset-md-2 pt-4 text-center">Inscribe a ti equipo a las diversas competencias y <abbr title="Talleres, retos, entrevistas o participación en videos">eventos</abbr> internacionales que se estarán llevando a cabo.</div>
+			</div>
+			<div class="row pt-4 pb-4">
+				<div class="col-12 col-md-8 offset-md-2 pt-4">
+					<form>
+						<div class="form-row">
+							<div class="form-group col-12 col-sm-6 pb-1 pt-1">
+								<input type="text" class="form-control" placeholder="Nombre del equipo" required>
+							</div>
+							<div class="form-group col-12 col-sm-6 pb-1 pt-1">
+								<input type="text" class="form-control" placeholder="Nombre del capitán" required>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="col-12 pb-1 pt-1">
+								<div class="form-group">
+									<textarea name="propuesta" class="form-control" placeholder="Describe a tu equipo" rows="5">
+									</textarea>
+								</div>
+							</div>
+						</div>
+						<div class="form-row pt-3 pb-2">
+							<div class="offset-9 col-3">
+								<button type="button" class="btn btn-success btn-block">Enviar propuesta</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+</main>
+
+<!---  ABAJO EL FOOTER  -->
+<footer id="footer" class="pb-4 pt-4">
+	<div class="container">
+		<div class="row text-center">
+			<div class="col-12 col-md"><a href="#">Prensa</a></div>
+			<div class="col-12 col-md"><a href="#">Preguntas Frecuentes</a></div>
+			<div class="col-12 col-md"><a href="#">Contacto</a></div>
+			<div class="col-12 col-md"><a href="#">¿Quiénes somos?</a></div>
+			<div class="col-12 col-md"><a href="#">Mapa del sitio</a></div>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col pt-4">
+			<p>Siguenos en nuestras redes sociales:</p>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col pt-1 pb-4">
+			<a href="#" data-bs-toggle="tooltip" title="Facebook" data-bs-placement="left"><i class="fa-brands fa-square-facebook fa-3x pe-3 ps-3"></i></a>
+			<a href="#" data-bs-toggle="tooltip" title="Twitter" data-bs-placement="bottom"><i class="fa-brands fa-square-twitter fa-3x pe-3 ps-3"></i></a>
+			<a href="#" data-bs-toggle="tooltip" title="YouTube" data-bs-placement="bottom"><i class="fa-brands fa-square-youtube fa-3x pe-3 ps-3"></i></i></a>
+			<a href="#" data-bs-toggle="tooltip" title="Instagram" data-bs-placement="bottom"><i class="fa-brands fa-square-instagram fa-3x pe-3 ps-3"></i></a>
+			<a href="#" data-bs-toggle="tooltip" title="TikTok" data-bs-placement="right"><i class="fa-brands fa-tiktok fa-3x pe-3 ps-3"></i></a>
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col pb-2 pt-4">
+			<img src="assets/img/logoITSJ.png" alt="logo ITSJ" width="145px" height="auto" class="rounded">
+		</div>
+	</div>
+	<div class="row text-center">
+		<div class="col pb-2 pt-4">
+			<p>&copy;Tencnológico Nacional de México, Campues Jerez.</p>
+			<p>Todos los derechos reservados.</p>
+		</div>
+	</div>
+</footer>
+
+<!-- MODAL COMPRA -->
+
+<div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Comprar entradas</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+      	Complete los siguientes datos para realizar la compra:
+      	<form>
+      		<div class="form-row">
+      			<div class="form-group col-12 col-sm-6 py-1">
+      				<input type="text" class="form-control" placeholder="Nombre(s)" required>
+      			</div>
+      		</div>
+
+      		<div class="form-row">
+      			<div class="form-group col-12 py-1">
+      				<input type="text" class="form-control" placeholder="Apellidos" required>
+      			</div>
+      		</div>
+
+      		<div class="form-row">
+      			<div class="form-group col-12 py-1">
+      				<input type="email" class="form-control" placeholder="E-mail" required>
+      			</div>
+      		</div>
+
+      		<div class="form-row">
+      			<div class="form-group col-12 col-sm-6 py-1">
+      				<label for="select1">Número de entradas:</label>
+      				<select id="select1">
+      					<option>1</option>
+      					<option>2</option>
+      					<option>3</option>
+      					<option>4</option>
+      					<option>5</option>
+      					<option>6</option>
+      					<option>7</option>
+      					<option>8</option>
+      					<option>9</option>
+      					<option>10</option>
+      				</select>
+      			</div>
+      		</div>
+
+      		<div class="form-row">
+      			<div class="form-group col-12 col-sm-6 py-1">
+      				<label for="select2">Método de pago:</label>
+      				<select id="select2">
+      					<option>Tarjeta de crédito</option>
+      					<option>Tarjeta de débito</option>
+      					<option>PayPal</option>
+      					<option>Mercado Pago</option>
+      					<option>Depósito Bancario</option>
+      					<option>Tienda de conveniencia</option>
+      				</select>
+      			</div>
+      		</div>
+
+      	</form>
+
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button type="button" class="btn btn-primary">Proceder al pago</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- OFFCANVAS -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasLabel">Magna Inauguración</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+ 	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ut felis id eros molestie laoreet vel sed odio. Maecenas facilisis suscipit finibus. Donec varius odio enim, ac dignissim massa dapibus pharetra. Nam dictum neque id lorem porttitor, non luctus ipsum eleifend. In in nibh ipsum. Ut quis nisi laoreet ipsum vehicula commodo vitae ac mi. Quisque vulputate lacinia nulla, eu ultricies enim pellentesque a. Fusce posuere accumsan sollicitudin. Donec at magna at felis malesuada lobortis ac et nisi. Fusce ligula velit, placerat suscipit semper at, auctor ac turpis. Suspendisse tincidunt velit vel mauris interdum placerat sed nec purus.
+  </div>
+  <br>
+  <h4>
+  	<div class="badges pb-3">
+  		<span class="badge bg-success pb-2">Hotel Río Rivera Maya</span>
+  		<span class="badge bg-info">12:00 hrs</span>
+  	</div>
+  </h4>
+</div>
+
+
+<script>
+var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl)
+})
+</script>
+
+</body>
+</html>
